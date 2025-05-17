@@ -11,7 +11,7 @@ document.getElementById('formulario').addEventListener('submit', async (e) => {
     };
   
     try {
-      const res = await fetch('/reservar', {
+      const res = await fetch('https://sistema-citas-modular.up.railway.app/reservar', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -28,6 +28,9 @@ document.getElementById('formulario').addEventListener('submit', async (e) => {
         mensaje.style.color = 'red';
       }
     } catch (err) {
+      const mensaje = document.getElementById('mensaje');
+      mensaje.textContent = '❌ Error de conexión';
+      mensaje.style.color = 'red';
       console.error(err);
     }
   });
