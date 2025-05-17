@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #111827;
+    margin-bottom: 25px;
+    font-size: 28px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input,
+  select,
+  button {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  }
+  
+  button {
+    background-color: #2563eb;
+    color: hsl(28, 71%, 55%);
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  #mensaje {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 500px) {
+    .container {
+      padding: 25px 20px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    input,
+    select,
+    button {
+      font-size: 15px;
+    }
+  }
+  

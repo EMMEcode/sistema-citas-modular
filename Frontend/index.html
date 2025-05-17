@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agendar Cita</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Agendar una Cita</h1>
+    <form id="formulario">
+      <input type="text" id="nombre" placeholder="Nombre" required />
+      <input type="text" id="apellido" placeholder="Apellido" required />
+      <input type="tel" id="telefono" placeholder="Teléfono" required />
+      <select id="doctor" required>
+        <option value="">Selecciona un doctor</option>
+        <option value="Dremme">Dr. Emme</option>
+        <option value="Perez">Dra. Pérez</option>
+        <option value="Gomez">Dr. Gómez</option>
+      </select>
+      <input type="date" id="fecha" required />
+      <input type="time" id="hora" required />
+      <button type="submit">Agendar</button>
+    </form>
+    <p id="mensaje"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
